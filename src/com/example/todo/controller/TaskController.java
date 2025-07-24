@@ -9,4 +9,8 @@ public interface TaskController {
     void onUpdate(int id, String title, String desc, String dueDate, int priority, String status);
     /** 삭제 요청 처리 */
     void onDelete(int id);
+    /** 불러오기 요청 처리 */
+    void onLoad(String filePath);
+    /** 저장하기 요청 처리 */
+    void onSave(String filePath);
 }

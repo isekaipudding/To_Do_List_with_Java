@@ -17,4 +17,8 @@ public interface TaskDAO {
     void update(TaskEntity task) throws IOException;
     /** 삭제 */
     void delete(int id) throws IOException;
+    /** 불러오기 */
+    void load(String filePath) throws IOException;
+    /** 저장하기 */
+    void save(String filePath) throws IOException;
 }
