@@ -10,4 +10,8 @@ public interface FileRepository {
     void appendLine(String line) throws IOException;
     /** 전체 덮어쓰기 */
     void overwriteLines(List<String> lines) throws IOException;
+    /** 모든 파일 읽기 */
+    List<String> readAll() throws IOException;
+    /** 모든 파일 쓰기 */
+    void writeAll(List<String> lines) throws IOException;
 }

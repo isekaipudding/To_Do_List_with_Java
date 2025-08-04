@@ -12,29 +12,37 @@ public class TaskEntity {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    TaskEntity() {}
+    public TaskEntity() {}
 
-    int getId() {return id;}
-    void setId(int id) {this.id = id;}
+    public int getId() {return id;}
+    public void setId(int id) {this.id = id;}
 
-    String getTitle() {return title;}
-    void setTitle(String title) {this.title = title;}
+    public String getTitle() {return title;}
+    public void setTitle(String title) {this.title = title;}
 
-    String getDescription() {return description;}
-    void setDescription(String description) {this.description = description;}
+    public String getDescription() {return description;}
+    public void setDescription(String description) {this.description = description;}
 
-    LocalDateTime getDueDate() {return dueDate;}
-    void setDueDate(LocalDateTime dueDate) {this.dueDate = dueDate;}
+    public LocalDateTime getDueDate() {return dueDate;}
+    public void setDueDate(LocalDateTime dueDate) {this.dueDate = dueDate;}
 
-    int getPriority() {return priority;}
-    void setPriority(int priority) {this.priority = priority;}
+    public int getPriority() {return priority;}
+    public void setPriority(int priority) {this.priority = priority;}
 
-    String getStatus() {return status;}
-    void setStatus(String status) {this.status = status;}
+    public String getStatus() {return status;}
+    public void setStatus(String status) {this.status = status;}
 
-    LocalDateTime getCreatedAt() {return createdAt;}
-    void setCreatedAt(LocalDateTime createdAt) {this.createdAt = createdAt;}
+    public LocalDateTime getCreatedAt() {return createdAt;}
+    public void setCreatedAt(LocalDateTime createdAt) {this.createdAt = createdAt;}
 
-    LocalDateTime getUpdatedAt() {return updatedAt;}
-    void setUpdatedAt(LocalDateTime updatedAt) {this.updatedAt = updatedAt;}
+    public LocalDateTime getUpdatedAt() {return updatedAt;}
+    public void setUpdatedAt(LocalDateTime updatedAt) {this.updatedAt = updatedAt;}
+
+    public CharSequence getContent() {
+        throw new UnsupportedOperationException("Unimplemented method 'getContent'");
+    }
+
+    public void setContent(String string) {
+        throw new UnsupportedOperationException("Unimplemented method 'setContent'");
+    }
 }
